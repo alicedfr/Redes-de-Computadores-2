@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPLS Engenharia de Tráfego</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+        figcaption {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #050044;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #050044;
+            padding: 20px;
+            width: 250px;
+            box-sizing: border-box;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+
+        nav a {
+            color: #fff;
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #050044;
+        }
+
+        .container {
+            margin-left: 270px; /* Espaço para o menu lateral */
+            padding: 20px;
+            max-width: calc(100% - 270px);
+            box-sizing: border-box;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#capa">MPLS-TE</a>
+        <a href="#introducao">Introdução</a>
+        <a href="#fundamentos">Fundamentos do MPLS-TE</a>
+        <a href="#componentes">Componentes Principais</a>
+        <a href="#planejamento">Planejamento de Caminhos e Otimização de Tráfego</a>
+        <a href="#qos">QoS no MPLS-TE</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#perguntas">Perguntas</a>
+    </nav>
+
+    <div class="container">
+        <section id="capa" class="content">
+            <h1>Multiprotocol Label Switching Traffic Engineering (MPLS-TE)</h1>
+            <img src="imagens/capa.png" alt="https://networklessons.com/mpls/introduction-to-mpls-traffic-engineering-te" style="display: block; margin: 0 auto;">
+            <figcaption>https://networklessons.com/mpls/introduction-to-mpls-traffic-engineering-te</figcaption>
+            <p>EEL879 - Redes de Computadores II</p>
+            <p>Grupo: Alice Duarte, Carolina Santiago e Gustavo Roxo</p>
+        </section>
+        <section id="introducao" class="content">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao estudo de MPLS (Multiprotocol Label Switching) Engenharia de Tráfego. Aqui exploramos os conceitos e aplicações desse protocolo essencial para o gerenciamento eficiente de redes de alta performance.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Imagem representativa do MPLS">
+        </section>
+
+        <section id="fundamentos" class="content">
+            <h2>Fundamentos do MPLS-TE</h2>
+            <p>O MPLS-TE (Traffic Engineering) é uma técnica que permite otimizar o fluxo de tráfego em redes, garantindo melhor alocação de recursos. Ele utiliza a rotulagem de pacotes para criar caminhos mais eficientes.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Diagrama explicando os fundamentos do MPLS-TE">
+        </section>
+
+        <section id="componentes" class="content">
+            <h2>Componentes Principais</h2>
+            <p>Os principais componentes do MPLS-TE incluem LSRs (Label Switching Routers), LSPs (Label Switched Paths), e protocolos como RSVP-TE e CR-LDP para estabelecer túneis de tráfego.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Componentes principais do MPLS">
+        </section>
+
+        <section id="planejamento" class="content">
+            <h2>Planejamento de Caminhos e Otimização de Tráfego</h2>
+            <p>O planejamento de caminhos em MPLS-TE envolve a seleção de rotas baseadas em critérios como largura de banda, latência e carga de tráfego. A otimização é crucial para garantir a eficiência da rede.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Diagrama de planejamento de caminhos MPLS-TE">
+        </section>
+
+        <section id="qos" class="content">
+            <h2>QoS no MPLS-TE</h2>
+            <p>A Qualidade de Serviço (QoS) é um fator essencial no MPLS-TE, permitindo priorizar diferentes tipos de tráfego e garantir a entrega de serviços críticos.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Ilustração de QoS no MPLS-TE">
+        </section>
+
+        <section id="aplicacoes" class="content">
+            <h2>Aplicações</h2>
+            <p>O MPLS-TE é amplamente utilizado em ISPs, data centers e redes corporativas para melhorar a eficiência do tráfego e a qualidade dos serviços oferecidos.</p>
+            <img src="caminho-da-imagem-aqui.jpg" alt="Aplicações do MPLS-TE em redes">
+        </section>
+
+        <section id="perguntas" class="content">
+            <h2>Perguntas</h2>
+            <p>1. Qual a diferença entre MPLS e MPLS-TE?<br>
+               2. Como o MPLS-TE melhora a eficiência de uma rede?<br>
+               3. Cite exemplos de aplicações práticas do MPLS-TE.</p>
+        </section>
+    </div>
+
+</body>
+</html>
