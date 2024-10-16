@@ -19,7 +19,7 @@
         }
 
         header {
-            background-color: #050044;
+            background-color: #09008b;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -28,7 +28,7 @@
         }
 
         nav {
-            background-color: #050044;
+            background-color: #09008b;
             padding: 20px;
             width: 250px;
             box-sizing: border-box;
@@ -50,7 +50,7 @@
         }
 
         nav a:hover {
-            background-color: #050044;
+            background-color: #09008b;
         }
 
         .container {
@@ -89,6 +89,7 @@
         <a href="#qos">QoS no MPLS-TE</a>
         <a href="#aplicacoes">Aplicações</a>
         <a href="#perguntas">Perguntas</a>
+        <a href="#bibliografia">Bibliografia</a>
     </nav>
 
     <div class="container">
@@ -101,45 +102,61 @@
         </section>
         <section id="introducao" class="content">
             <h2>Introdução</h2>
-            <p>Bem-vindo ao estudo de MPLS (Multiprotocol Label Switching) Engenharia de Tráfego. Aqui exploramos os conceitos e aplicações desse protocolo essencial para o gerenciamento eficiente de redes de alta performance.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Imagem representativa do MPLS">
+            <h4>O que é MPLS?</h4>
+            <p>O Multiprotocol Label Switching (MPLS) é um protocolo de redirecionamento de pacotes baseado em rótulos (labels). Essa tecnologia foi pensada com o intuito de melhorar a velocidade do encaminhamento de pacotes de dados em redes grandes.</p>
+            <h4>A importância da Engenharia de Tráfego</h4>
+            <p>Existem dois tipos de "engenharia" quando estamos falando de expansão e crescimento de redes: Engenharia de Redes - ou network engineering - e Engenharia de Tráfego - ou trafic engineering. Enquanto a engenharia de redes foca na manipulação das redes para satisfazer o tráfego, a engenharia de tráfego manipula o tráfego para "se encaixar" nos requisitos e limites da rede.</p>
+            <p>A engenharia de tráfego no MPLS permite que operadores de rede definam como que o tráfego funcionará. </p>
         </section>
 
         <section id="fundamentos" class="content">
             <h2>Fundamentos do MPLS-TE</h2>
+            <h4>Como o MPLS-TE funciona</h4>
             <p>O MPLS-TE (Traffic Engineering) é uma técnica que permite otimizar o fluxo de tráfego em redes, garantindo melhor alocação de recursos. Ele utiliza a rotulagem de pacotes para criar caminhos mais eficientes.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Diagrama explicando os fundamentos do MPLS-TE">
+            <h4>Difereças entre o MLPS tradicional e o MLPS-TE</h4>
+            <p>lalala</p>
         </section>
 
         <section id="componentes" class="content">
             <h2>Componentes Principais</h2>
+            <h4>Labels, LSPs e túneis TE</h4>
             <p>Os principais componentes do MPLS-TE incluem LSRs (Label Switching Routers), LSPs (Label Switched Paths), e protocolos como RSVP-TE e CR-LDP para estabelecer túneis de tráfego.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Componentes principais do MPLS">
+            <h4>Protocolo de Reserva de Recursos (RSVP-TE)</h4>
+            <p>escrever</p>
         </section>
 
         <section id="planejamento" class="content">
             <h2>Planejamento de Caminhos e Otimização de Tráfego</h2>
+            <h4>Seleção de caminhos e métricas de rede</h4>
             <p>O planejamento de caminhos em MPLS-TE envolve a seleção de rotas baseadas em critérios como largura de banda, latência e carga de tráfego. A otimização é crucial para garantir a eficiência da rede.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Diagrama de planejamento de caminhos MPLS-TE">
+            <h4>Configuração de túneis e alocação de recursos</h4>
+            <p>lalal</p>
         </section>
 
         <section id="qos" class="content">
             <h2>QoS no MPLS-TE</h2>
+            <h4>Gerenciamento de largura de banda e priorização do tráfego</h4>
             <p>A Qualidade de Serviço (QoS) é um fator essencial no MPLS-TE, permitindo priorizar diferentes tipos de tráfego e garantir a entrega de serviços críticos.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Ilustração de QoS no MPLS-TE">
+            <h4>Garantia de performance com QoS</h4>
         </section>
 
         <section id="aplicacoes" class="content">
             <h2>Aplicações</h2>
+            <h4>Casos de uso</h4>
             <p>O MPLS-TE é amplamente utilizado em ISPs, data centers e redes corporativas para melhorar a eficiência do tráfego e a qualidade dos serviços oferecidos.</p>
-            <img src="caminho-da-imagem-aqui.jpg" alt="Aplicações do MPLS-TE em redes">
+            <h4>Limitações</h4>
         </section>
 
         <section id="perguntas" class="content">
             <h2>Perguntas</h2>
-            <p>1. Qual a diferença entre MPLS e MPLS-TE?<br>
-               2. Como o MPLS-TE melhora a eficiência de uma rede?<br>
-               3. Cite exemplos de aplicações práticas do MPLS-TE.</p>
+        </section>
+
+        <section id="bibliografia" class="content">
+            <h2>Bibliografia</h2>
+            <p>OSBORNE, O; SIMNHA, A; <strong>Traffic Engineering with MPLS: Design, configure and manage MPLS TE to optimize network performance.</strong> Indianapolis: Cisco Press, 2003.</p>
+            <p><a href="https://datatracker.ietf.org/doc/html/draft-ietf-mpls-soft-preemption-00">https://datatracker.ietf.org/doc/html/draft-ietf-mpls-soft-preemption-00</a></p>
+            <p><a href="https://networklessons.com/mpls/introduction-to-mpls-traffic-engineering-te">https://networklessons.com/mpls/introduction-to-mpls-traffic-engineering-te</a></p>
+            <p><a href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/mplste.html">https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/mplste.html</a></p>
         </section>
     </div>
 
