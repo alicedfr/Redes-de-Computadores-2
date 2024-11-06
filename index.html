@@ -133,12 +133,33 @@
       </section>
       <section id="introducao" class="content">
         <h2>Introdução</h2>
+        <h4>O Protocolo IP</h4>
+        <p>
+          No protocolo IP, cada roteador possui uma tabela de roteamento, 
+          na qual cada registro corresponde ao caminho que o pacote deve seguir para determinado
+          destino. O tamanho dessas tabelas está diretamente relacionado com o tempo e a capacidade de processamento necessários
+          para acessar um registro da tabela. Assim, quanto maior for a tabela de roteamento, mais demorado e custoso computacionalemnte
+          é o processo de encaminhamento do pacote. Além disso, essas tabelas não possuem informações de congestionamento, tráfego ou fluxo, 
+          o que seria útil para um melhor desempenho de uma rede. 
+        </p>
+        <img
+        src="imagens/tabela_roteamento.png"
+        alt="https://www.qconcursos.com/questoes-de-concursos/questoes/e8f2a471-a9"
+        style="display: block; margin: 0 auto"
+      />
+      <figcaption>
+        https://www.qconcursos.com/questoes-de-concursos/questoes/e8f2a471-a9
+      </figcaption>
         <h4>O que é MPLS?</h4>
         <p>
           O Multiprotocol Label Switching (MPLS) é um protocolo de
           redirecionamento de pacotes baseado em rótulos (labels). Essa
           tecnologia foi pensada com o intuito de melhorar a velocidade do
-          encaminhamento de pacotes de dados em redes grandes.
+          encaminhamento de pacotes de dados em redes grandes. 
+          Ao invés de tabelas de roteamento para cada roteador, os pacotes
+          chegam aos roteadores com rótulos(labels), que são mapeados para 
+          serem encaminhados diretamente para determinado roteador. O MPLS conta com a Engenharia de Tráfego para melhorar
+          o desempenho da rede.
         </p>
         <h4>A importância da Engenharia de Tráfego</h4>
         <p>
@@ -151,8 +172,18 @@
         </p>
         <p>
           A engenharia de tráfego no MPLS permite que operadores de rede definam
-          como que o tráfego funcionará.
+          como que o tráfego funcionará. Ela possibilita a otimização dos caminhos, 
+          um melhor desempenho para grandes volumes de dados, uma qualidade de serviço maior e 
+          o cálculo de caminhos "redundantes", para caso haja falha em algum roteador.
         </p>
+        <img
+        src="imagens/trafego_dados.jpg"
+        alt="https://www.teleco.com.br/tutoriais/tutorialmineradora2/pagina_2.asp"
+        style="display: block; margin: 0 auto"
+      />
+      <figcaption>
+        https://www.teleco.com.br/tutoriais/tutorialmineradora2/pagina_2.asp
+      </figcaption>
       </section>
 
       <section id="fundamentos" class="content">
@@ -219,16 +250,23 @@
         </ul>
 
         <h4>Protocolo de Reserva de Recursos (RSVP-TE)</h4>
-        <ul>
-          <li>
+        <p>
             É uma extensão do protocolo RSVP, usado para sinalizar e estabelecer
             LSPs na rede MPLS. O RSVP-TE permite a reserva de recursos ao longo
             do caminho, garantindo que a largura de banda necessária esteja
             disponível para o tráfego. Ele também suporta funcionalidades
             avançadas como proteção contra falhas (Fast Reroute) e redundância
             de LSPs.
-          </li>
-        </ul>
+          <p>
+            <img
+        src="imagens/rsvp.jpg"
+        alt="https://www.teleco.com.br/tutoriais/tutorialredempls2/pagina_3.asp"
+        style="display: block; margin: 0 auto"
+      />
+      <figcaption>
+        https://www.teleco.com.br/tutoriais/tutorialredempls2/pagina_3.asp
+      </figcaption>
+            
       </section>
 
       <section id="planejamento" class="content">
@@ -262,6 +300,15 @@
           granular e não há mecanismos específicos para garantir a QoS ao longo
           do caminho.
         </p>
+        <img
+        src="imagens/tunel.png"
+        alt="https://www.howtonetwork.com.br/forum/routing/mpls-te-para-engenharia-de-trafego-no-seu-backbone"
+        style="display: block; margin: 0 auto"
+        width="600"
+      />
+      <figcaption>
+        https://www.howtonetwork.com.br/forum/routing/mpls-te-para-engenharia-de-trafego-no-seu-backbone
+      </figcaption>
       </section>
 
       <section id="qos" class="content">
